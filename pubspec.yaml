@@ -1,0 +1,36 @@
+name: pectus_app
+description: "Pectus Excavatum Exercise App"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_local_notifications: ^21.0.0
+  google_generative_ai: ^0.4.7
+  http: ^1.6.0
+  image_picker: ^1.2.2
+  path_provider: ^2.1.5
+  permission_handler: ^12.0.1
+  provider: ^6.1.2
+  shared_preferences: ^2.2.3
+  timezone: ^0.11.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+  uses-material-design: true
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: false
+  image_path: "assets/icon/app_icon.jpg"
+  adaptive_icon_background: "#0D0D0F"
+  adaptive_icon_foreground: "assets/icon/app_icon.jpg"
