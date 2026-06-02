@@ -18,7 +18,7 @@
 
 | Splash Screen | Login Screen | Sign Up Screen |
 |:---:|:---:|:---:|
-| ![Splash](screenshots/splash_screen.png) | ![Login](screenshots/login_screen.png) | ![Sign Up](screenshots/signup_screen.png) |
+| ![Splash](screenshots/Splash screen.png) | ![Login](screenshots/login_screen.png) | ![Sign Up](screenshots/signup_screen.png) |
 
 | Dashboard | AI Chat Analysis |
 |:---:|:---:|
