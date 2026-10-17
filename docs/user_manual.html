@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pectus AI — User Manual</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', sans-serif; background: #f5f7fa; color: #1a1a2e; line-height: 1.8; }
+  .container { max-width: 800px; margin: 40px auto; background: white; border-radius: 16px; box-shadow: 0 4px 30px rgba(0,0,0,0.08); overflow: hidden; }
+  .header { background: linear-gradient(135deg, #0D0D0F 0%, #004d5c 100%); padding: 50px 48px; color: white; }
+  .header .badge { display: inline-block; background: rgba(77,208,225,0.2); color: #4DD0E1; border: 1px solid #4DD0E1; border-radius: 100px; padding: 4px 14px; font-size: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 16px; }
+  .header h1 { font-size: 36px; font-weight: 700; margin-bottom: 8px; }
+  .header p { color: rgba(255,255,255,0.65); font-size: 15px; }
+  .toc { background: #f0fdfe; padding: 28px 48px; border-bottom: 1px solid #e0f7fa; }
+  .toc h3 { font-size: 14px; font-weight: 700; color: #00838f; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; }
+  .toc ol { margin-left: 20px; }
+  .toc li { margin-bottom: 4px; }
+  .toc a { color: #00ACC1; text-decoration: none; font-size: 14px; }
+  .toc a:hover { text-decoration: underline; }
+  .content { padding: 48px; }
+  .section { margin-bottom: 48px; }
+  h2 { font-size: 22px; font-weight: 700; color: #0D0D0F; margin-bottom: 16px; padding-bottom: 10px; border-bottom: 2px solid #4DD0E1; }
+  h3 { font-size: 16px; font-weight: 600; color: #00ACC1; margin: 20px 0 10px; }
+  p { color: #444; margin-bottom: 12px; font-size: 15px; }
+  ul, ol { margin: 8px 0 16px 20px; }
+  li { color: #444; margin-bottom: 6px; font-size: 15px; }
+  .step-card { display: flex; gap: 16px; background: #f9f9f9; border-radius: 12px; padding: 16px 20px; margin-bottom: 12px; align-items: flex-start; }
+  .step-num { background: #4DD0E1; color: white; border-radius: 50%; width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 13px; flex-shrink: 0; margin-top: 2px; }
+  .step-text strong { color: #0D0D0F; display: block; margin-bottom: 2px; font-size: 15px; }
+  .step-text span { color: #666; font-size: 14px; }
+  .tip-box { background: #fff8e1; border-left: 4px solid #FFC107; border-radius: 8px; padding: 14px 20px; margin: 16px 0; font-size: 14px; color: #5a4000; }
+  .tip-box strong { color: #e65100; }
+  .feature-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 16px 0; }
+  .feature-card { background: #f0fdfe; border: 1px solid #b2ebf2; border-radius: 12px; padding: 16px; }
+  .feature-card .icon { font-size: 28px; margin-bottom: 8px; }
+  .feature-card h4 { font-size: 14px; font-weight: 700; color: #0D0D0F; margin-bottom: 4px; }
+  .feature-card p { font-size: 13px; color: #555; margin: 0; }
+  .footer { background: #f5f7fa; padding: 24px 48px; text-align: center; color: #888; font-size: 13px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="badge">Official Documentation</div>
+    <h1>User Manual</h1>
+    <p>Pectus AI — Excavatum Exercise &amp; Recovery App &nbsp;|&nbsp; Version 1.0.0 &nbsp;|&nbsp; June 2026</p>
+  </div>
+
+  <div class="toc">
+    <h3>Table of Contents</h3>
+    <ol>
+      <li><a href="#intro">Introduction</a></li>
+      <li><a href="#install">Installation Guide</a></li>
+      <li><a href="#getstarted">Getting Started</a></li>
+      <li><a href="#features">App Features</a></li>
+      <li><a href="#ai">Using the AI Analysis</a></li>
+      <li><a href="#settings">Settings &amp; Customization</a></li>
+      <li><a href="#faq">FAQ &amp; Troubleshooting</a></li>
+    </ol>
+  </div>
+
+  <div class="content">
+    <div class="section" id="intro">
+      <h2>1. Introduction</h2>
+      <p>Welcome to <strong>Pectus AI</strong> — the first AI-powered mobile application dedicated entirely to Pectus Excavatum recovery. This manual will guide you through everything you need to know to get the most out of the app.</p>
+      <p>Pectus Excavatum is a chest wall deformity where the breastbone is sunken into the chest. While surgical correction is sometimes needed, daily targeted exercises can significantly improve posture, breathing capacity, and quality of life — especially for mild to moderate cases. Pectus AI provides exactly those tools.</p>
+    </div>
+
+    <div class="section" id="install">
+      <h2>2. Installation Guide</h2>
+      <h3>Installing via APK</h3>
+      <div class="step-card"><div class="step-num">1</div><div class="step-text"><strong>Download the APK</strong><span>Download PectusAI.apk from the provided link or the apk/ folder in this repository.</span></div></div>
+      <div class="step-card"><div class="step-num">2</div><div class="step-text"><strong>Enable Unknown Sources</strong><span>Go to Android Settings → Security (or Privacy) → Enable "Unknown Sources" or "Install Unknown Apps".</span></div></div>
+      <div class="step-card"><div class="step-num">3</div><div class="step-text"><strong>Open the APK</strong><span>Tap the downloaded file in your notification bar or file manager to begin installation.</span></div></div>
+      <div class="step-card"><div class="step-num">4</div><div class="step-text"><strong>Install &amp; Launch</strong><span>Tap Install, wait for completion, then open Pectus AI from your app drawer.</span></div></div>
+      <div class="tip-box"><strong>⚠️ Tip:</strong> If you are on Android 8.0 or above, you may need to allow the specific app (e.g., Chrome or your file manager) to install unknown apps. Go to Settings → Apps → Special Access → Install Unknown Apps.</div>
+    </div>
+
+    <div class="section" id="getstarted">
+      <h2>3. Getting Started</h2>
+      <h3>First Launch</h3>
+      <p>When you first open Pectus AI, you will see the animated splash screen followed by the Login/Sign Up screen.</p>
+      <div class="step-card"><div class="step-num">1</div><div class="step-text"><strong>Create an Account</strong><span>Tap "Don't have an account? Sign Up" to create a new profile. Enter your full name, email, and a password (minimum 6 characters).</span></div></div>
+      <div class="step-card"><div class="step-num">2</div><div class="step-text"><strong>Complete Onboarding</strong><span>After signing up, you will be guided through a short onboarding flow explaining the app's main features.</span></div></div>
+      <div class="step-card"><div class="step-num">3</div><div class="step-text"><strong>Reach the Dashboard</strong><span>You will land on your personal dashboard showing your streak, session count, and today's suggested workout.</span></div></div>
+    </div>
+
+    <div class="section" id="features">
+      <h2>4. App Features</h2>
+      <div class="feature-grid">
+        <div class="feature-card"><div class="icon">🏠</div><h4>Dashboard</h4><p>See your daily streak, total sessions, and a personalized workout suggestion all in one place.</p></div>
+        <div class="feature-card"><div class="icon">🤖</div><h4>AI Chat</h4><p>Ask any question about Pectus Excavatum and get intelligent, context-aware answers.</p></div>
+        <div class="feature-card"><div class="icon">🏋️</div><h4>Exercise Library</h4><p>Browse a curated library of Pectus-specific exercises with instructions and media.</p></div>
+        <div class="feature-card"><div class="icon">▶️</div><h4>Session Mode</h4><p>Follow a guided, timed workout session with exercise transitions and rest periods.</p></div>
+        <div class="feature-card"><div class="icon">📈</div><h4>Progress</h4><p>Track your completed sessions and visualize your consistency over time with charts.</p></div>
+        <div class="feature-card"><div class="icon">🌙</div><h4>Dark / Light Mode</h4><p>Switch between dark and light themes from your profile settings at any time.</p></div>
+      </div>
+    </div>
+
+    <div class="section" id="ai">
+      <h2>5. Using the AI Analysis</h2>
+      <h3>AI Chat Assistant</h3>
+      <p>Tap the AI Chat button (the glowing bubble in the navigation bar) to open the chat interface. You can ask anything related to Pectus Excavatum — exercises, severity, diet, or general recovery questions.</p>
+      <h3>Chest Photo Analysis</h3>
+      <p>From the Dashboard, tap the <strong>"AI Chest Analysis"</strong> card. You can:</p>
+      <ul>
+        <li>Upload a chest photo from your gallery, or take one with your camera.</li>
+        <li>The AI will analyze the image and provide a severity estimate.</li>
+        <li>You will receive a customized exercise plan based on the analysis.</li>
+      </ul>
+      <div class="tip-box"><strong>🔒 Privacy Note:</strong> Your photos are sent to the AI provider for analysis only. They are not stored by this app. For maximum privacy, use Ollama Local Mode (see Settings).</div>
+    </div>
+
+    <div class="section" id="settings">
+      <h2>6. Settings &amp; Customization</h2>
+      <p>Access all settings via the <strong>Profile</strong> tab (bottom navigation).</p>
+      <ul>
+        <li><strong>Edit Name:</strong> Tap the pencil icon next to your name to change it.</li>
+        <li><strong>Dark / Light Mode:</strong> Toggle the theme switch to change the app's appearance.</li>
+        <li><strong>Notification Reminders:</strong> Enable daily reminders and set your preferred workout time.</li>
+        <li><strong>AI Provider:</strong> Switch between Groq (cloud) and Ollama (local) for AI features.</li>
+        <li><strong>Clear Progress:</strong> Reset your session data from the Profile screen if needed.</li>
+      </ul>
+    </div>
+
+    <div class="section" id="faq">
+      <h2>7. FAQ &amp; Troubleshooting</h2>
+      <h3>The AI chat is not responding</h3>
+      <p>Make sure you have a working internet connection if using Groq or Gemini mode. If using Ollama, ensure the Ollama server is running on your local machine.</p>
+      <h3>The app crashes on startup</h3>
+      <p>Try clearing the app's cache: Settings → Apps → Pectus AI → Clear Cache, then relaunch.</p>
+      <h3>Notifications are not appearing</h3>
+      <p>Go to Settings → Apps → Pectus AI → Notifications and ensure notifications are enabled for this app.</p>
+      <h3>Camera permission denied</h3>
+      <p>Go to Settings → Apps → Pectus AI → Permissions and enable Camera and Storage permissions.</p>
+    </div>
+  </div>
+
+  <div class="footer">
+    &copy; 2026 Pectus AI by Talha Riaz &nbsp;|&nbsp; Version 1.0.0 &nbsp;|&nbsp; All rights reserved.<br>
+    For support, visit the GitHub repository or contact the developer.
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pectus AI — Privacy Policy</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #f5f7fa;
+    color: #1a1a2e;
+    line-height: 1.8;
+  }
+  .container {
+    max-width: 800px;
+    margin: 40px auto;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.08);
+    overflow: hidden;
+  }
+  .header {
+    background: linear-gradient(135deg, #0D0D0F 0%, #1a2a3a 100%);
+    padding: 50px 48px;
+    color: white;
+  }
+  .header .badge {
+    display: inline-block;
+    background: rgba(77,208,225,0.2);
+    color: #4DD0E1;
+    border: 1px solid #4DD0E1;
+    border-radius: 100px;
+    padding: 4px 14px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  .header h1 { font-size: 36px; font-weight: 700; margin-bottom: 8px; }
+  .header p { color: rgba(255,255,255,0.65); font-size: 15px; }
+  .content { padding: 48px; }
+  h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0D0D0F;
+    margin: 36px 0 12px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #4DD0E1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  h2:first-child { margin-top: 0; }
+  p { color: #444; margin-bottom: 12px; font-size: 15px; }
+  ul { margin: 8px 0 16px 20px; }
+  li { color: #444; margin-bottom: 6px; font-size: 15px; }
+  .highlight-box {
+    background: #f0fdfe;
+    border-left: 4px solid #4DD0E1;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin: 16px 0;
+  }
+  .footer {
+    background: #f5f7fa;
+    padding: 24px 48px;
+    text-align: center;
+    color: #888;
+    font-size: 13px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="badge">Legal Document</div>
+    <h1>Privacy Policy</h1>
+    <p>Pectus AI — Excavatum Exercise &amp; Recovery App &nbsp;|&nbsp; Effective Date: June 2, 2026</p>
+  </div>
+  <div class="content">
+    <div class="highlight-box">
+      <strong>Summary:</strong> Pectus AI is designed with your privacy in mind. We do not run servers, we do not sell data, and most of your information stays on your device. This document explains exactly what we collect and why.
+    </div>
+
+    <h2>1. Information We Collect</h2>
+    <p>Pectus AI collects the minimum information necessary to provide its services:</p>
+    <ul>
+      <li><strong>Name:</strong> The name you enter during registration or profile setup. This is stored locally on your device only.</li>
+      <li><strong>Exercise &amp; Session Data:</strong> Your completed workouts, streak count, and session history. Stored locally using SharedPreferences.</li>
+      <li><strong>Chest Photos (Optional):</strong> If you choose to use the AI Chest Analysis feature, photos are sent to the AI provider you have configured (Google Gemini or Groq). Photos are NOT stored by this app and are NOT retained by this app on any server.</li>
+      <li><strong>Notification Preferences:</strong> Your reminder time settings, stored locally.</li>
+    </ul>
+
+    <h2>2. How We Use Your Information</h2>
+    <ul>
+      <li>To display your personalized name and stats on the dashboard</li>
+      <li>To track your exercise progress and maintain streaks</li>
+      <li>To send AI-powered analysis of your chest condition (only when you initiate it)</li>
+      <li>To send you daily workout reminder notifications at your chosen time</li>
+    </ul>
+
+    <h2>3. Third-Party AI Services</h2>
+    <p>When you use the AI Chat or AI Chest Analysis feature, your messages and/or photos are transmitted to one of the following third-party AI providers:</p>
+    <ul>
+      <li><strong>Google Gemini API</strong> — Subject to <a href="https://policies.google.com/privacy">Google's Privacy Policy</a></li>
+      <li><strong>Groq API</strong> — Subject to <a href="https://groq.com/privacy-policy">Groq's Privacy Policy</a></li>
+      <li><strong>Ollama (Local Mode)</strong> — All processing happens entirely on your device; no data leaves your phone</li>
+    </ul>
+    <p>We recommend using <strong>Ollama local mode</strong> if you are concerned about data privacy.</p>
+
+    <h2>4. Data Storage &amp; Security</h2>
+    <p>All personal data (name, preferences, session history) is stored locally on your device using Android's SharedPreferences mechanism. This data is:</p>
+    <ul>
+      <li>Not transmitted to any server operated by this app</li>
+      <li>Not accessible to other apps (stored in the app's private storage)</li>
+      <li>Deleted when you uninstall the app</li>
+    </ul>
+
+    <h2>5. Data Sharing</h2>
+    <p>We do not sell, trade, or share your personal data with any third parties, except as described in Section 3 (AI providers you choose to use).</p>
+
+    <h2>6. Children's Privacy</h2>
+    <p>This app is not intended for children under the age of 13. We do not knowingly collect personal information from children. If you believe a child has provided personal information through this app, please contact us so we can remove it.</p>
+
+    <h2>7. Your Rights</h2>
+    <p>You have the right to:</p>
+    <ul>
+      <li>Clear all local app data by going to <strong>Android Settings → Apps → Pectus AI → Clear Data</strong></li>
+      <li>Disable notification permissions at any time via Android Settings</li>
+      <li>Use the app in Ollama local mode to ensure zero data leaves your device</li>
+    </ul>
+
+    <h2>8. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. Updates will be reflected in the app's next version release. The effective date at the top of this document will be updated accordingly.</p>
+
+    <h2>9. Contact</h2>
+    <p>If you have any questions about this Privacy Policy, please contact the developer:</p>
+    <ul>
+      <li><strong>Developer:</strong> Talha Riaz</li>
+      <li><strong>Department:</strong> Department of Computer Science</li>
+      <li><strong>GitHub:</strong> github.com/YourUsername</li>
+    </ul>
+  </div>
+  <div class="footer">
+    &copy; 2026 Pectus AI by Talha Riaz. All rights reserved. &nbsp;|&nbsp; This document was last updated on June 2, 2026.
+  </div>
+</div>
+</body>
+</html>
